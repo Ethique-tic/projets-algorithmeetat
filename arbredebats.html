@@ -1,0 +1,113 @@
+
+
+
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Arbre des débats</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+							<a  class="logo">
+									<span class="title">Arbre des débats</span>
+									</a>
+
+								</span>
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="accueil.html">Accueil</a></li>
+							<li><a href="listeacteurs.html">Liste des acteurs</a></li>
+							<li><a href="arbredebats.html">Arbre des débats</a></li>
+							<li><a href="chronologie.html">Chronologie</a></li>
+							<li><a href="scandalewolkswagen.html">Le scandale Wolskvagen</a></li>
+							<li><a href="algorithme.html">Algorithme de calcul des impôts</a></li>
+							<li><a href="apropos.html">A propos</a></li>
+
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div class="main">
+						<div class="image">
+							<img src="images/arbre_debat.png" alt="" style="width: 1300px;"/>
+						</div>
+					</div>
+
+
+					<?php
+					if(isset($_POST['submit'])){
+					    $to = "email@example.com"; // this is your Email address
+					    $from = $_POST['email']; // this is the sender's Email address
+					    $first_name = $_POST['name'];
+					    $subject = "Form submission";
+					    $message = " wrote the following:";
+							$headers = "lkjlkj";
+					    mail($to,$subject,$message,$headers);
+					    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+					    }
+					?>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Restons en contact</h2>
+								<form method="post" action="email.php">
+									<div class="field half first">
+										<input type="text" name="name" id="name" placeholder="Nom" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="envoyer" class="s" /></li>
+									</ul>
+								</form>
+							</section>
+
+
+						</div>
+					</footer>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
