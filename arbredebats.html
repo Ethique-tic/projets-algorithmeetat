@@ -46,7 +46,7 @@
 							<li><a href="listeacteurs.html">Liste des acteurs</a></li>
 							<li><a href="arbredebats.html">Arbre des débats</a></li>
 							<li><a href="chronologie.html">Chronologie</a></li>
-							<li><a href="scandalewolkswagen.html">Le scandale Wolskvagen</a></li>
+							<li><a href="scandalewolkswagen.html">Le scandale Volskwagen</a></li>
 							<li><a href="algorithme.html">Algorithme de calcul des impôts</a></li>
 							<li><a href="apropos.html">A propos</a></li>
 
@@ -61,44 +61,64 @@
 						</div>
 					</div>
 
+							<br>
+							<h3 align-center>Qu'est ce que l'algorithme fait à l'État?</h3>
+							<p>
+						Devant les questions posées par nos deux études de cas, la question du rôle de l’Etat par rapport aux algorithmes est soulevée. « Qu’est-ce que l’algorithme fait à l’était » signifie donc quelle réaction à l’Etat face au problème des algorithmes, mais aussi quelles mesures il prend préventivement.  </p>
+					</div>
 
-					<?php
-					if(isset($_POST['submit'])){
-					    $to = "email@example.com"; // this is your Email address
-					    $from = $_POST['email']; // this is the sender's Email address
-					    $first_name = $_POST['name'];
-					    $subject = "Form submission";
-					    $message = " wrote the following:";
-							$headers = "lkjlkj";
-					    mail($to,$subject,$message,$headers);
-					    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-					    }
-					?>
+					<div>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Restons en contact</h2>
-								<form method="post" action="email.php">
-									<div class="field half first">
-										<input type="text" name="name" id="name" placeholder="Nom" />
+							<h3 align-center>   Affaire Volkswagen</h3>
+							<p>
+							Volkswagen a, depuis 2009, créé un algorithme tricheur caché dans les ordinateurs de contrôle de leurs voitures, qui détecte les conditions de tests environnementaux et modifie les consommations du moteurs afin de se conforter aux normes.
+							</p>
+					</div>
+					<div>
+
+							<h3 align-center>   Algorithme de calcul des impôts</h3>
+							<p>
+							Le calcul des impôts est extrêmement complexe. Malgré l’existence d’un code complet des impôts sous forme de textes de lois, le calcul lui-même est éclaté dans différentes parties de l’administration. Il s’agit ici de tout regrouper en algorithme accessible au public.
+
+					<div>
+
+							<h3 align-center>   Contrôle des algorithmes privés</h3>
+							<p>
+								L’Etat désire avoir la possibilité de contrôler les algorithmes issus du milieu privé, comme souligné par l’affaire Volkswagen. Les entreprises, elles, revendiquent la propriété intellectuelle et le secret industriel. Le contrôle et la propriété intellectuelle sont-ils pourtant incompatibles ?
+</p>
+					</div>
+
+					<div>
+
+							<h3 align-center>    Ouverture du code source</h3>
+							<p>
+								L’ouverture du code source est une problématique commune aux deux études de cas. Dans le cas des impôts cette ouverture a pour but une utilisation publique et anonyme, tandis que dans le cas de Volkswagen, il s’agit de créer un accès au code, mais pour qui ?
+ </p>
+					</div>
+
+					<div>
+
+							<h3 align-center>    Rôle de l’Etat</h3>
+							<p>
+						C’est à l’Etat d’adopter des textes établissant un système de contrôle des algorithmes. Les détails d’un tel système restent flous, et les définir revient à apporter une réponse à notre interrogation initiale du rôle de l’Etat par rapport aux algorithmes.
+							</p>
+					</div>
+
+					<div>
+
+							<h3 align-center>    Sous quelle forme le faire?</h3>
+							<p>
+						Décider d’ouvrir le code source est une chose, définir les spécificités de cette ouverture en est une autre. Dans quel langage devraient être écrits les programmes de calculs, à quel point doit-il être accessible et réutilisable par le grand public ? Faut-il le rendre lisible ?</p>
+					</div>
+
+
+
+
 									</div>
-									<div class="field half">
-										<input type="email" name="email" id="email" placeholder="Email" />
-									</div>
-									<div class="field">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="envoyer" class="s" /></li>
-									</ul>
-								</form>
-							</section>
+								</div>
 
 
-						</div>
-					</footer>
+					
 
 			</div>
 
